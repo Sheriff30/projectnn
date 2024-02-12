@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <p class="google">GOOGLE</p>
+      <div class="search">
+        <input type="text" />
+        <span class="btn"> Search</span>
+
+        <div class="nada">
+          <img
+            src="/WhatsApp Image 2024-02-12 at 20.16.19_81d5f1da.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const btn = document.querySelector(".btn");
+
+      btn.addEventListener("click", function () {
+        if (
+          document.querySelector("input").value ===
+          "Who is the most beautiful girl in the world?"
+        ) {
+          document.querySelector("img").classList.add("show");
+        }
+      });
+    </script>
+  </body>
+</html>

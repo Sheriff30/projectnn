@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding: 5rem;
+  height: fit-content;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60rem; /* Ensure container takes full width */
+  max-width: 100%;
+}
+
+.google {
+  font-size: 5vw; /* Using viewport width units for font size */
+  font-weight: bold;
+  color: pink;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+input {
+  display: block;
+  width: 100%; /* Example: Set input width to 90% of viewport width */
+  max-width: 100%; /* Example: Set maximum width for responsiveness */
+  height: 3rem;
+  border-radius: 5px;
+  color: pink;
+  font-size: 1.6rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+.btn {
+  display: block;
+  padding: 1rem;
+  background-color: pink;
+  color: white;
+  cursor: pointer;
+}
+
+.nada {
+  width: 100%;
+  max-width: 30rem;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  object-fit: cover;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
